@@ -1,0 +1,50 @@
+.top-information-section {
+  background-color: #353637;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.left-side-information-article > h3 , a.facebook-icon-link {
+  display: inline;
+  color: #929aa3;
+}
+
+.left-side-information-article > h3:first-child {
+  border-right: 1px solid white;
+  padding: 15px 15px 10px 0;
+  margin-right: 10px;
+}
+
+h3.header-h3 {
+  margin: 0;
+}
+i.fa-envelope,
+.fa-phone {
+  font-size: 25px;
+  padding: 0;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+a.facebook-icon-link {
+    text-decoration: none;
+}
+
+.left-side-information-article {
+  padding-left: 20px;
+}
+
+.right-side-information-article {
+  padding-right: 20px;
+}
+
+/* .top-information-navigation-section {
+  position: fixed;
+  z-index: 9999;
+} */
+
+header {
+  position: relative;
+}

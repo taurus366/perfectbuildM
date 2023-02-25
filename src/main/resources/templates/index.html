@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<header>
+
+    <section class="top-information-section">
+        <article class="left-side-information-article" id="start">
+            <h3 class="left-side-information-h3 header-h3"><i class="fas fa-phone"></i> 0899614996</h3>
+            <h3 class="left-side-information-h3 header-h3"><i class="far fa-envelope"></i> zinal_mustafa@abv.bg</h3>
+        </article>
+        <!-- <article class="right-side-information-article">
+            <h3 class="right-side-information-h3 header-h3"><a class="facebook-icon-link" href="#"><i class="fab fa-facebook-square"></i> FACEBOOK</a></h3>
+        </article> -->
+    </section>
+
+    <section class="scrolled-temp">
+
+
+        <section class="top-information-navigation-section">
+            <!-- <article class="scrolled-temp"></article> -->
+            <article class="company-image-article">
+                <img src="/images/PerfectBuildEm-removebg-preview.png" alt="Image">
+            </article>
+
+            <nav class="nav-item-index">
+                <ul>
+                    <li><a class="li-link" href="#start">Начало</a></li>
+                    <li><a class="li-link" href="#who-are-we">За нас</a></li>
+                    <li><a class="li-link" href="#who-are-we">Услуги</a></li>
+                    <!-- <li><a class="li-link" href="#">Новини</a></li> -->
+                </ul>
+            </nav>
+
+        </section>
+    </section>
+
+</header>
+
+
+<main>
+
+    <div class="index-container">
+
+        <section class="index-image-section">
+            <img class="index-image-img" src="/images/ben-allan-BIeC4YK2MTA-unsplash.jpg" alt="">
+            <article class="index-image-text-article">
+                <h3>Ремонтни и Строителни услуги.</h3>
+            </article>
+        </section>
+
+        <section class="index-text-form-section">
+
+            <article class="index-text-section-article" id="who-are-we">
+                <h2>Кои сме ние?</h2>
+                <h3>Перфект Билд Ем предлага :</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> изграждане на груб строеж</li>
+                    <li><i class="fas fa-check"></i> зидарии</li>
+                    <li><i class="fas fa-check"></i> монтаж на арматура</li>
+                    <li><i class="fas fa-check"></i> ремонт на покриви</li>
+                    <li><i class="fas fa-check"></i> топлоизолация</li>
+                    <li><i class="fas fa-check"></i> гипскартон</li>
+                    <li><i class="fas fa-check"></i> терекот и фаянс</li>
+                    <li><i class="fas fa-check"></i> боядисване</li>
+                    <li><i class="fas fa-check"></i> шпакловане</li>
+                </ul>
+            </article>
+
+            <article class="index-form-section-article">
+                <form class="ask-for-question-form" action="#" method="post" id="ask"
+                      th:action="@{/contact}"
+                      th:object="${contactModel}">
+
+                    <h2 class="for-orange">Изпрати запитване</h2>
+                    <input type="text" placeholder="Вашето име*" th:field="*{name}">
+                    <input type="text" placeholder="Вашият e-mail*" th:field="*{email}">
+                    <input type="tel" placeholder="Телефон" th:field="*{phone}">
+                    <textarea cols="40" rows="4" placeholder="Вашето съобщение" th:field="*{message}"></textarea>
+
+                    <input type="submit" value="ИЗПРАТИ ЗАПИТВАНЕ" class="btn-submit ask">
+<!--                    <th:block th:if="${sent}">-->
+                        <article class="request-sent" >
+                            <h4 th:if="${sent == true}">Здравейте, запитването ви е изпратено успешно!</h4>
+                            <h4 th:if="${sent == false}" style="color: red !important;">Неуспешно изпратено запитване, свържете с посочения номер.</h4>
+                        </article>
+<!--                    </th:block>-->
+<!--                    <th:block th:unless="${sent == false}">-->
+<!--                        <article class="request-didnt-sent" style="color: red;" th:unless="${sent == false}">-->
+<!--                            <h4>Неуспешно изпратено запитване, свържете с посочения номер.</h4>-->
+<!--                        </article>-->
+<!--                    </th:block>-->
+
+                </form>
+            </article>
+        </section>
+
+        <section class="index-image-cover-section">
+            <img class="index-image-cover-img" src="/images/42812769_l.jpg" alt="">
+            <article class="index-image-cover-text-article">
+                <h3>Имате въпроси? Свържете се с нас.</h3>
+            </article>
+            <article class="index-image-cover-text-article-tel">
+                <h3><i class="fas fa-phone bottom"></i> 0899614996</h3>
+            </article>
+        </section>
+
+
+        <section class="index-subscription-section">
+
+            <i class="far fa-envelope subscription left"></i>
+            <i class="far fa-envelope subscription right"></i>
+            <!-- <i class="far fa-envelope"></i> -->
+            <article class="index-subscription-article">
+                <h2 class="subscription-title">МЕСЕЧЕН АБОНАМЕНТ</h2>
+                <form action="#" method="post">
+                    <input class="subscription-email" type="email" placeholder="Въведете вашият е-маил адрес*">
+                    <input class="subscription-submit btn-submit" type="submit" value="АБОНИРАЙ СЕ">
+
+                </form>
+                <p class="subscription-under-text">(Вашите лични данни ще бъдат използвани само по предназначение.)</p>
+            </article>
+
+        </section>
+
+    </div>
+
+</main>
+
+<div class="footer-container">
+
+    <article class="footer-article-first">
+        <footer>
+            <article class="company-text-icon-article">
+                <img src="/images/PerfectBuildEm-removebg-preview.png" alt="Image">
+            </article>
+
+            <article class="company-contactus-article">
+                <h2>КОНТАКТИ</h2>
+                <h4><i class="fas fa-home"></i> с.Медовец, община Дългопол, област Варна</h4>
+                <h4><i class="fas fa-phone"></i> 0899614996</h4>
+                <h4><i class="far fa-envelope"></i> zinal_mustafa@abv.bg</h4>
+            </article>
+
+            <article class="ask-for-btn">
+                <a href="#ask" class="ask-btn btn-submit ask">ИЗПРАТИ ЗАПИТВАНЕ</a>
+
+            </article>
+        </footer>
+    </article>
+
+    <article class="footer-article-second">
+        <footer>© 2012 - <span class="thisYear"></span> www.perfectbuild.com. Всички права запазени.</footer>
+    </article>
+
+</div>
+
+
+<script src="/js/header.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import url("/css/index.css");
+@import url("/css/header.css");
+@import url("/css/navigation.css");
+@import url("/css/footer.css");
+@import url("/css/media.css");
+
+body {
+  margin: 0;
+  /* max-width: 80%; */
+  /* padding: 0 30px 0 30px; */
+  /* padding-bottom: 1000px; */
+  
+}
+
+section.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #4b4949dc;
+  
+}
+
+.scrolled-sticky {
+  width: 120px;
+  overflow: hidden;
+     -webkit-transition: width 1.0s;
+    -moz-transition: width 1.0s;
+    transition: width 1.0s; 
+}
+
+.scrolled-temp {
+  height: 110px;
+  background-color: black;
+}
+
+.for-orange {
+  color: #EA5D20;
+}
+
+.request-sent {
+  color: coral;
+  text-align: center;
+}

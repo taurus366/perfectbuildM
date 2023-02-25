@@ -1,0 +1,247 @@
+.index-image-section {
+    max-width: 100%;
+    
+    /* width: 100%; */
+    /* height: 10px; */
+  
+    /* height: 700px; */
+    /* object-fit: fill; */  
+    position: relative; 
+}
+
+.index-image-img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    /* background: linear-gradient(
+        0deg,
+        rgba(255, 0, 150, 0.3),
+        rgba(255, 0, 150, 0.3)
+    ); */
+}
+
+img.index-image-cover-img {
+    width: 100%;
+    height: 500px;
+}
+
+section.index-image-cover-section {
+        position: relative;
+}
+
+article.index-image-cover-text-article {
+    position: absolute;
+   transform: translate(-50%,-50%);
+   top: 45%;
+   left: 40%;
+}
+
+article.index-image-cover-text-article-tel {
+    position: absolute;
+    transform: translate(-50%,-50%);
+   top: 50%;
+   left: 70%;
+}
+
+/* article.index-image-cover-text-article > h3 {
+    font-size: 30px;
+} */
+
+article.index-image-text-article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+article.index-image-text-article > h3 , article.index-image-cover-text-article > h3 , article.index-image-cover-text-article-tel > h3{
+    margin: 0;
+    color: orangered;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    /* text-shadow: 2px 2px #ada6a6; */
+    text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkblue;;
+}
+
+
+.index-text-form-section {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+article.index-text-section-article {
+    width: 50%;
+    /* float: left; */
+    /* vertical-align: middle; */
+    
+}
+
+article.index-text-section-article > ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+article.index-text-section-article > ul > li {
+    margin: 15px 0;
+    font-size: 25px;
+    color: #929AA3;
+}
+
+article.index-form-section-article {
+    float: right;
+  position: absolute;
+    width: 30%;
+    /* border: 1px solid black; */
+    padding: 50px 30px;
+    right: 0px;
+    top: -70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgb(61 61 61 / 10%) 2px -9px 20px 20px;
+
+    
+}
+
+article.index-form-section-article > form.ask-for-question-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+form.ask-for-question-form > input , form.ask-for-question-form > textarea {
+    border: 1px solid rgba(121, 118, 118, 0.233);
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(121, 118, 118, 0.233);
+}
+
+form.ask-for-question-form > h2 {
+    margin: 0 auto 15px auto;
+    font-size: 30px;
+   letter-spacing: 0.5px;
+   font-weight: 900;
+}
+
+
+ .btn-submit.ask {
+    background-color: #EA5D20;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 60%;
+    align-self: center;
+    font-size: 16px;
+    padding: 13px;
+}
+
+
+
+.fa-check {
+    color: green;
+}
+i.fa-phone.bottom{
+    font-size: 40px;
+    height: 43px;
+}
+
+article.index-text-section-article > h3 {
+    font-size: 30px;
+    margin: 1px 0 5px 0;
+    color: rgb(87, 85, 85);
+}
+
+article.index-text-section-article > h2 {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 10px;
+
+}
+
+section.index-subscription-section {
+    position: relative;
+    padding: 80px 0px;
+    /* width: 98%; */
+    margin: auto;
+    border: 0;
+    background: linear-gradient(to bottom, #ffffff36 0%, #f6f6f6 100%);
+}
+
+i.subscription {
+    position: absolute;
+    color: #d2dce867;
+}
+
+i.subscription.right {
+    right: 15px;
+    font-size: 150px;
+    top: 15px;
+   
+}
+
+i.subscription.left {
+    left: 15px;
+    bottom: 15px;
+    font-size: 150px;
+}
+
+article.index-subscription-article {
+    text-align: center;
+}
+
+article.index-subscription-article > form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 500px;
+    margin: auto;
+}
+
+input.subscription-submit {
+    background-color: #EA5D20;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 35px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+input.subscription-email {
+    padding: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+input.subscription-email::placeholder {
+    color: #AAA9A9;
+}
+
+h2.subscription-title {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #494C4E;
+}
+
+
+.btn-submit:hover {
+    background-color: #ff4d00
+}
+
+.btn-submit:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(63, 49, 49, 0.6);
+}
+
+p.subscription-under-text {
+    color: #929AA3;
+    
+}
+
