@@ -84,10 +84,10 @@
                       th:object="${contactModel}">
 
                     <h2 class="for-orange">Изпрати запитване</h2>
-                    <input type="text" placeholder="Вашето име*" th:field="*{name}">
-                    <input type="text" placeholder="Вашият e-mail*" th:field="*{email}">
-                    <input type="tel" placeholder="Телефон" th:field="*{phone}">
-                    <textarea cols="40" rows="4" placeholder="Вашето съобщение" th:field="*{message}"></textarea>
+                    <input type="text" placeholder="Вашето име*" th:field="*{name}" required>
+                    <input type="text" placeholder="Вашият e-mail*" th:field="*{email}" required>
+                    <input type="tel" placeholder="Телефон" th:field="*{phone}" required>
+                    <textarea cols="40" rows="4" placeholder="Вашето съобщение" th:field="*{message}" required></textarea>
 
                     <input type="submit" value="ИЗПРАТИ ЗАПИТВАНЕ" class="btn-submit ask">
 <!--                    <th:block th:if="${sent}">-->
@@ -95,12 +95,6 @@
                             <h4 th:if="${sent == true}">Здравейте, запитването ви е изпратено успешно!</h4>
                             <h4 th:if="${sent == false}" style="color: red !important;">Неуспешно изпратено запитване, свържете с посочения номер.</h4>
                         </article>
-<!--                    </th:block>-->
-<!--                    <th:block th:unless="${sent == false}">-->
-<!--                        <article class="request-didnt-sent" style="color: red;" th:unless="${sent == false}">-->
-<!--                            <h4>Неуспешно изпратено запитване, свържете с посочения номер.</h4>-->
-<!--                        </article>-->
-<!--                    </th:block>-->
 
                 </form>
             </article>
