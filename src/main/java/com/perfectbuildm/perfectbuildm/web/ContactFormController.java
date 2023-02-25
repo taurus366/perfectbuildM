@@ -2,7 +2,6 @@ package com.perfectbuildm.perfectbuildm.web;
 
 import com.perfectbuildm.perfectbuildm.event.ContactSuccessfullEventImpl;
 import com.perfectbuildm.perfectbuildm.model.ContactFormBindingModel;
-import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Controller;
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import javax.validation.Valid;
 
 @Controller
 public class ContactFormController {
