@@ -55,4 +55,5 @@ public class ContactFormController {
     public String showIndexPage() {
         return "index";
     }
+
 }
